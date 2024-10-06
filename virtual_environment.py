@@ -6,6 +6,8 @@ source myenv/bin/activate
 
 # Activate the virtual environment (Windows)
 myenv\Scripts\activate.bat
+myenv\Scripts\Activate.ps1     #usin for powershell
+
 
 # Deactivate the virtual environment
 deactivate
