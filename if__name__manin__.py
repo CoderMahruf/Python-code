@@ -1,0 +1,2 @@
+import shuvo
+shuvo.welcome()
