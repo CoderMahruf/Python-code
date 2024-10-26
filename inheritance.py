@@ -44,3 +44,37 @@ s1.mothername = "Rowson"
 s1.parents()
 
 # Multilevel Inheritance 
+class Grandfather:
+    def __init__(self,grandfather):
+        self.grandfather = grandfather
+class Father(Grandfather):
+    def __init__(self,father,grandfather):
+        self.father = father
+        Grandfather.__init__(self,grandfather)
+class Son(Father):
+    def __init__(self,son,father,grandfather):
+        self.son = son
+        Father.__init__(self,father,grandfather)
+    def print_name(self):
+        print("Grandfather name is:",self.grandfather)
+        print("Father name is:",self.father)
+        print("Son name is:",self.son)
+obj = Son("Shuvo","Yousuf","Bashar")
+obj.print_name()
+
+# Hiererchical Inheritance 
+class Parent:
+    def func1(self):
+        print("This function is in parent class.")
+class Child1(Parent):
+    def func2(self):
+        print("This function is in Child 1.")
+class Child2(Parent):
+    def func3(self):
+        print("This function is in Child 2.")
+obj1 = Child1()
+obj2 = Child2()
+obj1.func1()
+obj1.func2()
+obj2.func1()
+obj2.func3()
