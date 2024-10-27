@@ -1,4 +1,14 @@
 # Inheritane in Python  
+class Vehicle:
+    def start(self):
+        print("Vehicle is starting")
+class Bike(Vehicle):
+    def start(self):
+        print("Bike is starting")
+obj = Bike()
+obj.start()
+
+
 class Employee:
     def __init__(self,name,id):
         self.name = name
@@ -78,3 +88,21 @@ obj1.func1()
 obj1.func2()
 obj2.func1()
 obj2.func3()
+
+# Hybrid Inheritance 
+class School:
+    def func1(self):
+        print("This function is in School")
+class Student1(School):
+    def func2(self):
+        print("This function is in student1")
+class Student2(School):
+    def func3(self):
+        print("This function is in student2")
+class Student3(Student1,School):
+    def func4(self):
+        print("This function is in student 3")
+obj1 = Student2()
+obj1.func3()
+obj = Student3()
+obj.func1()
