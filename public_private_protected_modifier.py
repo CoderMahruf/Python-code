@@ -32,3 +32,20 @@ my_object = MyClass()
 print(my_object._nonmangled_attribute)
 # print(my_object.__mangled_attribute) 
 print(my_object._MyClass__mangled_attribute) 
+
+# Prodected Access modifier in python 
+class Student:
+    def __init__(self):
+        self._name = "Shuvo"
+    def _funName(self):       #protected method 
+        return "Mahruful Alam"
+class Subject(Student):      #inherited class
+    pass
+obj = Student()
+obj1 = Subject()
+# calling by object of Student class 
+print(obj._name)
+print(obj._funName())
+# calling by object of Subject class 
+print(obj1._name)
+print(obj1._funName())
