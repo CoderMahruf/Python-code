@@ -33,7 +33,7 @@ print(my_object._nonmangled_attribute)
 # print(my_object.__mangled_attribute) 
 print(my_object._MyClass__mangled_attribute) 
 
-# Prodected Access modifier in python 
+# Protected Access modifier in python 
 class Student:
     def __init__(self):
         self._name = "Shuvo"
