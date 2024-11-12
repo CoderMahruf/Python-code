@@ -8,4 +8,6 @@ for pdf in files:
     merger.append(pdf)
 
 merger.write("merged-pdf.pdf")
-merger.close()
+merger.close()  
+
+# Merge two pdf files and then download and see.
