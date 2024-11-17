@@ -5,9 +5,9 @@ import time
 initialize = s.init()
 while True:
     # Voice reminder
-    initialize.say("Please drink water. Drinking water is for your own safety.")
+    initialize.say("Hey Good Morning Shuvo. Drinking water is for your own safety.")
     initialize.runAndWait()
-    
+
     # Desktop notification
     notification.notify(
         title="Drink Water",
